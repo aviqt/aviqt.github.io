@@ -11,3 +11,5 @@ More information about the usage of this directory in [the documentation](https:
 
 
 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
+
+https://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@github.com/aviqt/aviqt.github.io.git
