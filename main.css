@@ -1,0 +1,286 @@
+#__nuxt, #__layout {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+body{
+    font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "'Hiragino Sans GB", STHeiti, "Microsoft Yahei", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", Arial, Verdana, sans-serif;
+    text-shadow:0px 0px 1px rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+}
+html {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,body {
+  height: 100%;
+  overflow: hidden;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { -webkit-appearance: none; }
+input[type="number"]{ -moz-appearance: textfield; }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*后台登录*/
+.login-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  width: 450px;
+  margin: -200px 0 0 -225px;
+  background: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px 40px;
+}
+.login-box .logo {
+  position: relative;
+}
+.login-box .logo:before {
+  content: '';
+  position: absolute;
+  width: 18%;
+  height: 1px;
+  background: #7ca9f1;
+  left: -10px;
+  top: 50%;
+}
+.login-box .logo:after {
+  content: '';
+  position: absolute;
+  width: 18%;
+  height: 1px;
+  background: #7ca9f1;
+  right: -10px;
+  top: 50%;
+}
+.login-box .title {
+  font-size: 22px;
+  margin-top: 10px;
+  line-height: 30px;
+  color: #2e75fa;
+}
+.login-box .title img{
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.role-title{
+  font-size: 20px;
+  color: #2e75fa;
+  line-height: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.role-title:before {
+  content: '';
+  position: absolute;
+  width: 15%;
+  height: 2px;
+  background: #2e75fa;
+  left: 15%;
+  top: 50%;
+}
+.role-title:after {
+  content: '';
+  position: absolute;
+  width: 15%;
+  height: 2px;
+  background: #2e75fa;
+  right: 15%;
+  top: 50%;
+}
+.login-box .form {
+  text-align: left;
+}
+.login-box .form .form-item{
+  padding-bottom: 15px;
+  position: relative;
+}
+.login-box .form .form-item .iconfont {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  font-size: 25px;
+  color: #cccdd6;
+  z-index: 3;
+}
+.login-box .button {
+  background: #3e75fa;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.login-box .button:hover {
+  background: #5c94fb;
+}
+
+.login-box .el-input__inner {
+  padding-left: 40px;
+  border-radius: 5px;
+}
+.top-userInfo {
+  position: absolute;
+  height: 50px;
+  line-height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0 1px 10px #323741;
+  text-align: right;
+  padding-right: 30px;
+}
+.top-userInfo .button{
+  display: inline-block;
+  height: 50px;
+  width: 80px;
+  cursor: pointer;
+	text-align: center;
+}
+.top-userInfo .button:hover{
+  background: #eeeeee;
+}
+.center-box {
+  position: fixed;
+  top: 180px;
+  left: 50%;
+  bottom: 20px;
+  width: 800px;
+  margin: 0 0 0 -400px;
+  background: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px 40px;
+}
+.calendar-box {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  height: 570px;
+  width: 700px;
+  margin: -269px 0 0 0;
+  background: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px 20px;
+}
+.calendar-box-h{
+  position: relative;
+}
+._form table {
+  width: 100%;
+}
+._form td > span {
+  color:  #6198f9;
+  font-size: 14px;
+}
+._form table tr td{
+  text-align: left;
+  height: 40px;
+}
+._form table tr td:nth-child(2n+1){
+  text-align: right;
+  color: gray;
+  width: 100px;
+}
+._form table tr td:nth-child(2){
+  color: gray;
+  width: 250px;
+}
+._form .el-select {
+  width: 100%;
+}
+
+/*后台管理*/
+.admin-page {
+  padding: 10px 20px;
+}
+.admin-page .top {
+  line-height: 30px;
+}
+.admin-page .top .title {
+  border-left: 5px solid #3393f5;
+  padding-left: 10px;
+  font-size: 18px;
+  margin-right: 20px;
+}
+.action-bar {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 0;
+  line-height: 30px;
+}
+.action-bar button{
+  margin-left: 10px;
+}
+.action-bar > div{
+  display: inline-block;
+  padding: 5px ;
+}
+.action-bar > span{
+  cursor: pointer;
+  color: #4177ff;
+}
+.action-bar > span:hover{
+  color: #7CA9F1;
+}
+.action-bar .el-input{
+  width: 150px;
+}
+
+.el-table--enable-row-hover .el-table__body tr.hover-row>td {
+  background: initial;
+}
+.el-table--enable-row-hover .el-table__body tr.hover-row:hover>td {
+  background: #f5f7fa;
+}
+@keyframes boardEntry
+{
+  from {top: -200%;bottom: 204%}
+  to {8: 8%;bottom: 8%;}
+}
+
+.tab-menu {
+  border-bottom: 1px solid #ddd;
+}
+.tab-menu > div{
+  line-height: 50px;
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: -1px;
+}
+.tab-menu > div:hover, .tab-menu > div.active{
+  color: #4177FF;
+  border-bottom: 2px solid #4177FF;
+  margin-bottom: -2px;
+}
+
+
+.box-center-mid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
