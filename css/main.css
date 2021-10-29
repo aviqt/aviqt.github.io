@@ -1,0 +1,230 @@
+#__nuxt, #__layout {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+body{
+    font-family: 'Josefin Sans', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "'Hiragino Sans GB", STHeiti, "Microsoft Yahei", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", Arial, Verdana, sans-serif;
+    text-shadow:0px 0px 1px rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+}
+html {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,body {
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+html{
+  font-size: 20px;
+}
+body {
+  background: #ececec;
+  position: relative;
+  overflow: hidden;
+}
+.exam-box {
+  background: white;
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  top: 1rem;
+  bottom: 1rem;
+  overflow: auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+.exam-box .lab-info {
+  overflow: hidden;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.exam-box .table-info {
+  margin-top: 1.2rem;
+  padding: 0 0.5rem;
+}
+.exam-box .table-info span{
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  text-align: center;
+  line-height: 2.6rem;
+  font-weight: bold;
+  display:block;
+}
+
+
+  /*试卷*/
+  .pad-paper-view {
+  }
+  .pad-paper-view i{
+    font-family: 'Times New Roman',Microsoft YaHei;
+    margin: 0 5px;
+  }
+  .pad-paper-view span  {
+    border-bottom: 1px solid gray;
+    min-width: 2.5rem;
+    max-width: 4.5rem;
+    padding: 0 0.4rem;
+    text-align: center;
+    display: inline-block;
+    outline: none;
+    color: #4177ff;
+    height: 1.8rem;
+    line-height: 2rem;
+    overflow: hidden;
+    vertical-align: bottom;
+    white-space: nowrap;
+  }
+  .pad-paper-view .long-input {
+    max-width: 15rem;
+    min-width: 9rem;
+  }
+  .pad-paper-view .mid-input {
+    max-width: 5rem;
+    min-width: 3rem;
+  }
+  .pad-paper-view .layout-table{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .pad-paper-view .layout-table  tr  td{
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.8;
+    padding-bottom: 0.2rem;
+  }
+  .pad-paper-view .layout-table  tr  td:first-child{
+    width: 5.5rem;
+    text-align: left;
+  }
+
+  .pad-paper-view .fill-table{
+    width: 80%;
+    margin: 0 auto;
+    border-collapse:collapse;
+    text-align: center;
+  }
+  .pad-paper-view .fill-table span{
+    border: none;
+  }
+  .pad-paper-view .fill-table  tr  td{
+    text-align: center !important;
+    vertical-align: top;
+    padding:  0.5rem 0.2rem;
+    border: 1px solid gray;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    outline: none;
+    min-width: 3rem;
+    vertical-align: middle;
+  }
+
+  .pad-paper-view .button {
+    display: inline-block;
+    background: #4177ff;
+    color: white;
+    font-weight: bold;
+    padding: 0 1rem;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+  .pad-paper-view .btn-danger {
+    background: #F56C6C;
+  }
+  .pad-paper-view .button:active {
+    opacity: 0.8;
+  }
+  .pad-paper-view .confirmed {
+    color: #009900;
+  }
+
+
+/* 模拟键盘*/
+ .AKB-box{
+   height: 12rem;
+ }
+.analog-box{
+  position: fixed;
+   height: 12rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0;
+  background: gray;
+}
+.result-view{
+  background: white;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 2rem;
+  box-shadow: -3px 0px 5px inset #4177ff, 3px 3px 5px inset #4177ff;
+  font-family: 'Times New Roman',Microsoft YaHei;
+  color: #4177ff;
+}
+.keyboard-box {
+  position: relative;
+  text-align: left;
+  font-size: 0;
+  background: white;
+  box-shadow: 3px 3px 5px inset #4177ff, -3px -3px 5px inset #4177ff;
+}
+.keyboard-box > div {
+  display: inline-block;
+  width: 12.5%;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 2rem;
+  text-align: center;
+  box-shadow: -3px -3px 5px inset #4177ff;
+  user-select:none;
+  font-family: 'Times New Roman',Microsoft YaHei;
+}
+.keyboard-box > div:active{
+  box-shadow: 3px 3px 5px inset #4177ff;
+}
+
+
+.select-box {
+  margin-top: 0.5rem;
+  border: 1px solid #333;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 25rem;
+  text-align: left;
+}
+.select-box .select-value {
+  padding: 0.5rem; 
+}
+.select-box .select-option{
+  border: 1px solid #333;
+  position: absolute;
+  background: white;
+  width: 100%;
+  left: 0;
+  top: 100%;
+}
+.select-box .select-option span{
+  display: block;
+  text-align: left;
+  padding: 0.1rem 0.5rem;
+}
+.select-option span:active, .select-option span:hover{
+  background: #4177ff;
+  color: white;
+}
