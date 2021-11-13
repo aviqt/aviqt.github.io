@@ -31,6 +31,13 @@ html,body {
   box-sizing: border-box;
   margin: 0;
 }
+
+  .mid-center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 /*后台登录*/
 .login-box {
   position: fixed;
@@ -122,12 +129,6 @@ html,body {
   padding-left: 10px;
   font-size: 18px;
   margin-right: 20px;
-}
-
-@keyframes boardEntry
-{
-  from {top: -200%;bottom: 204%}
-  to {8: 8%;bottom: 8%;}
 }
 
 
@@ -260,6 +261,17 @@ body::after{
   position: absolute;
   z-index: -1;
 }
+
+
+
+
+
+@keyframes boardEntry
+{
+  from {top: -200%;bottom: 204%}
+  to {8: 8%;bottom: 8%;}
+}
+
 .board {
   position: fixed;
   left: 10%;
