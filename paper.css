@@ -1,17 +1,22 @@
-  
+
   /*试卷*/
   .pad-paper-view {
+  }
+  .pad-paper-view i{
+    font-family: 'Times New Roman',Microsoft YaHei;
+    margin: 0 5px;
   }
   .pad-paper-view span  {
     border-bottom: 1px solid gray;
     min-width: 2.5rem;
-    max-width: 4rem;
-    /*padding: 0 0.4rem;*/
+    max-width: 4.5rem;
+    padding: 0 0.4rem;
     text-align: center;
     display: inline-block;
     outline: none;
     color: #4177ff;
     height: 1.8rem;
+    line-height: 2rem;
     overflow: hidden;
     vertical-align: bottom;
     white-space: nowrap;
@@ -19,6 +24,10 @@
   .pad-paper-view .long-input {
     max-width: 15rem;
     min-width: 9rem;
+  }
+  .pad-paper-view .mid-input {
+    max-width: 5rem;
+    min-width: 3rem;
   }
   .pad-paper-view .layout-table{
     width: 100%;
@@ -31,10 +40,10 @@
     padding-bottom: 0.2rem;
   }
   .pad-paper-view .layout-table > tr > td:first-child{
-    width: 6rem;
-    text-align: right;
+    width: 5.5rem;
+    text-align: left;
   }
-  
+
   .pad-paper-view .fill-table{
     width: 80%;
     margin: 0 auto;
@@ -43,19 +52,18 @@
   }
   .pad-paper-view .fill-table span{
     border: none;
-    height: 1.1rem;
   }
   .pad-paper-view .fill-table > tr > td{
     vertical-align: top;
-    padding:  0.5rem;
+    padding:  0.5rem 0.2rem;
     border: 1px solid gray;
     font-size: 0.9rem;
     line-height: 1.2;
     outline: none;
-    min-width: 3.5rem;
+    min-width: 3rem;
     vertical-align: middle;
   }
-  
+
   .pad-paper-view .button {
     display: inline-block;
     background: #4177ff;
@@ -65,6 +73,9 @@
     border-radius: 0.3rem;
     font-size: 1.2rem;
     font-weight: normal;
+  }
+  .pad-paper-view .btn-danger {
+    background: #F56C6C;
   }
   .pad-paper-view .button:active {
     opacity: 0.8;
