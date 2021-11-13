@@ -260,3 +260,47 @@ body::after{
   position: absolute;
   z-index: -1;
 }
+.board {
+  position: fixed;
+  left: 10%;
+  right: 10%;
+  top: 8%;
+  bottom: 8%;
+  background: rgba(255,255,255,0.3);
+  box-shadow: 0 0 30px white;
+  animation: boardEntry 1s;
+}
+.board:before {
+  content: '';
+  position: absolute;
+  left: -2%;
+  right: -2%;
+  top: -3%;
+  bottom: -3%;
+  border-radius: 1%;
+  box-shadow: 0 0 30px white inset;
+}
+.board .item{
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  background: rgba(0,0,0,0.4);
+  box-shadow: 0 0 20px honeydew inset;
+  border-radius: 1%;
+  transition:all 0.3s;
+  overflow: hidden;
+}
+.board .item:hover{
+  box-shadow: 0 0 50px white inset;
+  transition:all 0.1s;
+}
+.board .item:before{
+  content: attr(item-code);
+  font-size: 150px;
+  line-height: 1;
+  color: white;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  opacity: 0.2;
+}
