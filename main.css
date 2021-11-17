@@ -274,10 +274,10 @@ body::after{
 
 .board {
   position: fixed;
-  left: 10%;
-  right: 10%;
-  top: 8%;
-  bottom: 8%;
+  left: 4%;
+  right: 4%;
+  top: 5%;
+  bottom: 5%;
   background: rgba(255,255,255,0.3);
   box-shadow: 0 0 30px white;
   animation: boardEntry 1s;
@@ -315,4 +315,16 @@ body::after{
   right: 20px;
   bottom: 10px;
   opacity: 0.2;
+}
+.boardItemcover:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: black;
+  opacity: 0.1;
+  border-radius: 1%;
+  cursor: pointer;
 }
