@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[18],{643:function(t,n,e){"use strict";e.r(n);var r={data:function(){return{}},mounted:function(){this.$router.push("/pad/paperView")},methods:{}},o=e(8),component=Object(o.a)(r,(function(){var t=this.$createElement;return(this._self._c||t)("div")}),[],!1,null,null,null);n.default=component.exports}}]);

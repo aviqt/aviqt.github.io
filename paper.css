@@ -51,7 +51,7 @@
     text-align: center;
   }
   .pad-paper-view .fill-table span{
-    border: none;
+    /* border: none; */
   }
   .pad-paper-view .fill-table > tr > td{
     vertical-align: top;
